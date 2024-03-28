@@ -65,7 +65,7 @@ namespace AdventureGame
             }
             else if (pageNumber == 6)
             {
-                soufflait = chanceMaker.Next(1, 10);
+                
                 if (soufflait > 5)
                 {
                     pageNumber = 15;
@@ -179,15 +179,11 @@ namespace AdventureGame
             }
             else if (pageNumber == 6)
             {
-                soufflait = chanceMaker.Next(1, 10);
-                if (soufflait > 5)
-                {
-                    pageNumber = 15;
-                }
-                else
-                {
+                
+                
+                
                     pageNumber = 16;
-                }
+                
             }
             else if (pageNumber == 7)
             {
@@ -269,6 +265,11 @@ namespace AdventureGame
             else if (pageNumber == 4)
             {
                 pageNumber = 6;
+                soufflait = chanceMaker.Next(1, 10);
+                if (soufflait > 5)
+                {
+                    pageNumber = 15;
+                }
             }
             output();
         }
@@ -331,9 +332,10 @@ namespace AdventureGame
                     outputLabel.Text = "It seems you have all the ingredients for this highly difficult dessert";
                     Refresh();
                     Thread.Sleep(5000);
-                    alarm.Play();
+                    
                     if (soufflait < 5)
                     {
+                        alarm.Play();
                         outputLabel.Text = "The soufflé fell! \nWhat should you do?";
                         button1.Text = "Fake death, flee country";
                         button2.Text = "serve it anyways";
@@ -400,6 +402,8 @@ namespace AdventureGame
                     break;
                 case 15:
                     pictureBox.BackgroundImage = Properties.Resources.souffle;
+                    button3.Visible = false;
+                    button3.Enabled = false;
                     outputLabel.Text = "You two share a lovely soufflé, you get a second date.";
                     button1.Text = "Continue";
                     button2.Text = "Also continue";
@@ -411,6 +415,8 @@ namespace AdventureGame
                     button2.Text = "Also continue";
                     break;
                 case 17:
+                    button3.Visible = false;
+                    button3.Enabled = false;
                     pictureBox.BackgroundImage = Properties.Resources.houseFire;
                     outputLabel.Text = "you light your house on fire and take all your cash";
                     outputLabel.Text = $"\nWhere will you go?";
