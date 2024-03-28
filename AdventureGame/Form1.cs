@@ -418,13 +418,14 @@ namespace AdventureGame
                     button2.Text = $"Lithuania, \nby boat";
                     break;
                 case 18:
-                    pictureBox.BackgroundImage = Properties.Resources.airport;
-                    outputLabel.Text = "you are arrested at the airport for travelling without a passport.";
+                    outputLabel.Text = "You escape to Lithuania and start a new life.";
                     button1.Text = "Continue";
                     button2.Text = "Also continue";
                     break;
                 case 19:
-                    outputLabel.Text = "You escape to Lithuania and start a new life.";
+                    
+                    pictureBox.BackgroundImage = Properties.Resources.airport;
+                    outputLabel.Text = "you are arrested at the airport for travelling without a passport.";
                     button1.Text = "Continue";
                     button2.Text = "Also continue";
                     break;
