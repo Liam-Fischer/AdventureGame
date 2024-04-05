@@ -298,7 +298,7 @@ namespace AdventureGame
                 case 3:
                     outputLabel.Text = "You enjoy an extra ten minutes in bed,\nbut you have a lot to do today so you get up.";
                     Refresh();
-                    Thread.Sleep(3000);
+                    Thread.Sleep(1400);
                     outputLabel.Text = "Should you eat breakfast?";
                     button1.Text = "No";
                     button2.Text = "Yes";
@@ -307,7 +307,7 @@ namespace AdventureGame
                     pictureBox.BackgroundImage = Properties.Resources.Kitchen;
                     outputLabel.Text = "You throw on some clothes and begin to survey your kitchen";
                     outputLabel.Refresh();
-                    Thread.Sleep(3000);
+                    Thread.Sleep(1300);
                     outputLabel.Text = "Which dish should you make?";
                     button1.Text = "Brownies";
                     button2.Text = "Nanaimo bars";
@@ -321,7 +321,7 @@ namespace AdventureGame
                     button3.Enabled = false;
                     outputLabel.Text = "You eat a quick breakfast before continuing your preparations";
                     Refresh();
-                    Thread.Sleep(3000);
+                    Thread.Sleep(2000);
                     outputLabel.Text = "Which dish should you make?";
                     button1.Text = "Brownies";
                     button2.Text = "Parfait";
@@ -331,7 +331,7 @@ namespace AdventureGame
                     button3.Enabled = false;
                     outputLabel.Text = "It seems you have all the ingredients for this highly difficult dessert";
                     Refresh();
-                    Thread.Sleep(5000);
+                    Thread.Sleep(2700);
                     
                     if (soufflait < 5)
                     {
@@ -351,7 +351,7 @@ namespace AdventureGame
                 case 8:
                     outputLabel.Text = "Simple and delicious";
                     outputLabel.Refresh();
-                    Thread.Sleep(3000);
+                    Thread.Sleep(2000);
                     outputLabel.Text = "Which fruits should you put in it?";
                     button1.Text = "Strawberries, raspberries, blueberries";
                     button2.Text = "Mango, Peach, Banana";
@@ -360,7 +360,7 @@ namespace AdventureGame
                     alarm.Play();
                     outputLabel.Text = "You are out of ingredients! \n You'll have to go to the store";
                     outputLabel.Refresh();
-                    Thread.Sleep(3000);
+                    Thread.Sleep(2000);
                     alarm.Stop();
                     pictureBox.BackgroundImage = Properties.Resources.wine;
                     outputLabel.Text = "While at store you see some wine, should you buy it?";
@@ -395,7 +395,7 @@ namespace AdventureGame
                     button3.Enabled = false;
                     button3.Visible = false;
                     outputLabel.Refresh();
-                    Thread.Sleep(3000);
+                    Thread.Sleep(2000);
                     outputLabel.Text = "Should you put hearts on the chocolate?";
                     button1.Text = "No";
                     button2.Text = "Yes";

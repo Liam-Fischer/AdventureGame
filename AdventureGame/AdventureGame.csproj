@@ -131,5 +131,8 @@
   <ItemGroup>
     <None Include="Resources\parfait.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons8-Ios7-Gaming-Hearts.512.ico" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
