@@ -286,7 +286,9 @@ namespace AdventureGame
                     break;
                 case 2:
                     outputLabel.Text = "Best to start your day early, after all there is much to do.";
-                    outputLabel.Text = $"\nWhat should you do first?";
+                    outputLabel.Text += $"\nWhat should you do first?";
+                    button1.Text = " ";
+                    button2.Text = " ";
                     Refresh();
                     Thread.Sleep(1000);
                     button1.Text = "Get dressed.";
@@ -297,6 +299,8 @@ namespace AdventureGame
                     break;
                 case 3:
                     outputLabel.Text = "You enjoy an extra ten minutes in bed,\nbut you have a lot to do today so you get up.";
+                    button1.Text = " ";
+                    button2.Text = " ";
                     Refresh();
                     Thread.Sleep(1400);
                     outputLabel.Text = "Should you eat breakfast?";
@@ -306,7 +310,10 @@ namespace AdventureGame
                 case 4:
                     pictureBox.BackgroundImage = Properties.Resources.Kitchen;
                     outputLabel.Text = "You throw on some clothes and begin to survey your kitchen";
-                    outputLabel.Refresh();
+                    button1.Text = " ";
+                    button2.Text = " ";
+                    button3.Text = " ";
+                    Refresh();
                     Thread.Sleep(1300);
                     outputLabel.Text = "Which dish should you make?";
                     button1.Text = "Brownies";
@@ -320,6 +327,8 @@ namespace AdventureGame
                     button3.Visible = false;
                     button3.Enabled = false;
                     outputLabel.Text = "You eat a quick breakfast before continuing your preparations";
+                    button1.Text = " ";
+                    button2.Text = " ";
                     Refresh();
                     Thread.Sleep(2000);
                     outputLabel.Text = "Which dish should you make?";
@@ -331,7 +340,7 @@ namespace AdventureGame
                     button3.Enabled = false;
                     outputLabel.Text = "It seems you have all the ingredients for this highly difficult dessert";
                     Refresh();
-                    Thread.Sleep(2700);
+                    Thread.Sleep(2500);
                     
                     if (soufflait < 5)
                     {
@@ -394,7 +403,9 @@ namespace AdventureGame
                     outputLabel.Text = "This classic Canadian dessert should be pretty easy to make";
                     button3.Enabled = false;
                     button3.Visible = false;
-                    outputLabel.Refresh();
+                    button1.Text = " ";
+                    button2.Text = " ";
+                    Refresh();
                     Thread.Sleep(2000);
                     outputLabel.Text = "Should you put hearts on the chocolate?";
                     button1.Text = "No";
